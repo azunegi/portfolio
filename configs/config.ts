@@ -1,6 +1,7 @@
 import { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
+  pathPrefix: "/portfolio",
   siteMetadata: {
     title: "Azuki's Portfolio",
     description: "Webデザイナー「Azuki」のポートフォリオサイト",
