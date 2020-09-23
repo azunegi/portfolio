@@ -11,6 +11,7 @@ import Contact from "@/components/Contact";
 const LogoTitle = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   position: absolute;
   top: 50%;

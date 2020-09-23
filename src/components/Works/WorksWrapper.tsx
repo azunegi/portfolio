@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
-    font-family: "Noto Sans JP";
+    font-family: "Ubuntu";
     font-size: 2.4rem;
   }
 

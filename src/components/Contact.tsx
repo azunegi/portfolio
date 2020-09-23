@@ -95,6 +95,10 @@ width: 100%;
     font-weight: bold;
     border-radius: 6px;
     background: #679dff;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 `;
