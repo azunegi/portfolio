@@ -2,12 +2,6 @@ import React from "react"
 import styled from "@emotion/styled"
 import { useForm } from "react-hook-form";
 
-type Inputs = {
-  name: string,
-  email: string,
-  content: string,
-};
-
 const Wrapper = styled.div`
 width: 100%;
 
@@ -106,8 +100,10 @@ width: 100%;
 `;
 
 export default function App() {
-  const { register, handleSubmit, errors } = useForm<Inputs>();
-  const onSubmit = data => console.log(data);
+  const { register, handleSubmit, errors } = useForm();
+  const onSubmit: Parameters<typeof handleSubmit>[0] = (_, e) => {
+    e?.target.submit();
+  }
 
   return (
     <Wrapper>
