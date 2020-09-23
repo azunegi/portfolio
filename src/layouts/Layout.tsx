@@ -1,7 +1,12 @@
 import React from "react";
+import Loadable from "react-loadable";
 import styled from "@emotion/styled";
 import Header from "@/components/Header";
-import ParticlesBg from "particles-bg";
+
+const ParticlesBg = Loadable({
+  loader: () => import("particles-bg"),
+  loading: () => <canvas />,
+});
 
 const Container = styled.div`
   display: flex;
