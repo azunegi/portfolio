@@ -10,8 +10,7 @@
     "clean": "gatsby clean",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "lintfix": "eslint . --fix --ext .js,.ts,.tsx",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
@@ -22,7 +21,7 @@
     "typescript",
     "starter"
   ],
-  "author": "tetsugi",
+  "author": "azunegi",
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.28",
