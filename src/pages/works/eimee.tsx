@@ -10,15 +10,23 @@ import ImageList from "@/components/Works/ImageList";
 import CardList from "@/components/Works/CardList";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-const TopImage = styled.img`
+const TopImage = styled.div`
   display: block;
   width: 100%;
-  margin-bottom: 20px;
-  border: solid 1px #b1b1b1;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 1024px) {
     width: calc(100% - 6vw);
-    margin: 0 3vw 20px 3vw;
+    margin: 0 3vw 60px 3vw;
+  }
+
+  & > img {
+    border: solid 1px #b1b1b1;
+  }
+  & > p {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 `;
 
@@ -55,12 +63,27 @@ export default () => (
         <li>Web/誌面広告制作</li>
       </TagList>
       <ButtonLink><a className="link" href="https://eimee.co.jp/" target="_blank">Webサイトを見る</a></ButtonLink>
-      <TopImage src="/img/works/eimee.jpg" alt="Eimee Inc.トップ画像"></TopImage>
+      <TopImage>
+        <img src="/img/works/eimee.jpg" alt="Eimee Inc.トップ画像"/>
+          <p>トップページでは会社の持つイメージを表した画像を大きく配置し、サイトの雰囲気が出るようにしてあります。</p>
+      </TopImage>
       <ImageList>
-        <li><img src="/img/works/eimee_1.jpg" alt="eimeeイメージ01"/></li>
-        <li><img src="/img/works/eimee_2.jpg" alt="eimeeイメージ02"/></li>
-        <li><img src="/img/works/eimee_3.jpg" alt="eimeeイメージ03"/></li>
-        <li><img src="/img/works/eimee_4.jpg" alt="eimeeイメージ04"/></li>
+        <li>
+          <img src="/img/works/eimee_1.jpg" alt="eimeeイメージ01"/>
+          <p>個人情報保護方針ページのトップ画像用の写真を撮影。被写体の制作から撮影、レタッチまで行いました。</p>
+        </li>
+        <li>
+          <img src="/img/works/eimee_2.jpg" alt="eimeeイメージ02"/>
+          <p>会社の制度を紹介したページではライティングのディレクションも行い、会社から求職者へ伝えるべき内容を精査しより伝わりやすいものに仕上げました。</p>
+        </li>
+        <li>
+          <img src="/img/works/eimee_3.jpg" alt="eimeeイメージ03"/>
+          <p>会社案内のパンフレットを制作も制作しました。こちらでは企画、提案から制作と入稿までの作業を行いました。</p>
+        </li>
+        <li>
+          <img src="/img/works/eimee_4.jpg" alt="eimeeイメージ04"/>
+          <p>印刷物では他にも採用関係のチラシや社内業務で使用する封筒などの制作も担当しました。</p>
+        </li>
       </ImageList>
       <h2>Other Works</h2>
         <CardList>

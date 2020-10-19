@@ -17,13 +17,12 @@ const ImageList = styled.ul`
 
     & > li {
       width:calc(100% / 2 - 10px);
-      border: solid 2px #b1b1b1;
 
       &:nth-of-type(2n+2) {
         margin-left: 20px;
       }
       &:nth-of-type(n+3) {
-        margin-top: 20px;
+        margin-top: 60px;
       }
   
       @media screen and (max-width: 768px) {
@@ -34,10 +33,19 @@ const ImageList = styled.ul`
           margin-left: 0;
         }
         &:nth-of-type(n+2) {
-          margin-top: 20px;
+          margin-top: 60px;
         }
+      }
+
+      & > img {
+        border: solid 2px #b1b1b1;
+      }
+
+      & > p {
+        margin-top: 20px;
+        font-size: 1.6rem;
+      }
     }
-  }
 `;
 
 export const Contents: React.FC = ({ children }) => (

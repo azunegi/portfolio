@@ -9,15 +9,23 @@ import TagList from "@/components/Works/TagList";
 import CardList from "@/components/Works/CardList";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-const TopImage = styled.img`
+const TopImage = styled.div`
   display: block;
   width: 100%;
-  margin-bottom: 120px;
-  border: solid 1px #b1b1b1;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 1024px) {
     width: calc(100% - 6vw);
-    margin: 0 3vw 20px 3vw;
+    margin: 0 3vw 60px 3vw;
+  }
+
+  & > img {
+    border: solid 1px #b1b1b1;
+  }
+  & > p {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 `;
 
@@ -53,7 +61,10 @@ export default () => (
         <li>レスポンシブデザイン</li>
       </TagList>
       <ButtonLink><a className="link" href="/" target="_blank">Webサイトを見る</a></ButtonLink>
-      <TopImage src="/img/works/azuki_portfolio.jpg" alt="Azuki's Portfolioトップ画像"></TopImage>
+      <TopImage>
+        <img src="/img/works/azuki_portfolio.jpg" alt="Azuki's Portfolioトップ画像"/>
+        <p>流れるようにに私自身について知ってもらえるよう、基本1ページ構成になるように制作しました。シンプルなデザインで分かりやすい配置になるよう調整しています。ちなみにロゴマークは家紋の「鷹の羽」からインスピレーションを得て作りました。</p>
+      </TopImage>
       <h2>Other Works</h2>
         <CardList>
           <li>

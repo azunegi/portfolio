@@ -10,15 +10,23 @@ import ImageList from "@/components/Works/ImageList";
 import CardList from "@/components/Works/CardList";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-const TopImage = styled.img`
+const TopImage = styled.div`
   display: block;
   width: 100%;
-  margin-bottom: 20px;
-  border: solid 1px #b1b1b1;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 1024px) {
     width: calc(100% - 6vw);
-    margin: 0 3vw 20px 3vw;
+    margin: 0 3vw 60px 3vw;
+  }
+
+  & > img {
+    border: solid 1px #b1b1b1;
+  }
+  & > p {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 `;
 
@@ -55,12 +63,27 @@ export default () => (
         <li>Web/誌面広告制作</li>
       </TagList>
       <ButtonLink><a className="link" href="https://elchika.com/" target="_blank">Webサイトを見る</a></ButtonLink>
-      <TopImage src="/img/works/elchika.jpg" alt="elchihkaトップ画像"></TopImage>
+      <TopImage>
+        <img src="/img/works/elchika.jpg" alt="elchihkaトップ画像"/>
+        <p>ファーストビューで初めてサイトを訪れた利用者にサービスの内容を理解してもらえるようにしつつ、記事やログイン等の導線へ行きやすくするための画面内に置けるバランス調整に力を入れました。</p>
+      </TopImage>
       <ImageList>
-        <li><img src="/img/works/elchika_1.jpg" alt="elchikaイメージ01"/></li>
-        <li><img src="/img/works/elchika_2.jpg" alt="elchikaイメージ02"/></li>
-        <li><img src="/img/works/elchika_3.jpg" alt="elchikaイメージ03"/></li>
-        <li><img src="/img/works/elchika_4.jpg" alt="elchikaイメージ04"/></li>
+        <li>
+          <img src="/img/works/elchika_1.jpg" alt="elchikaイメージ01"/>
+          <p>記事ページでは「記事を読む」という行為を邪魔せずに、ページ内で行えるアクションやリンクを如何に使いやすい形で配置するかを考えました。</p>
+        </li>
+        <li>
+          <img src="/img/works/elchika_2.jpg" alt="elchikaイメージ02"/>
+          <p>ユーザーページではユーザーそのものをメインとしつつ、各コンテンツへの導線を含めたレイアウト作成に注力しました。</p>
+        </li>
+        <li>
+          <img src="/img/works/elchika_3.jpg" alt="elchikaイメージ03"/>
+          <p>タグ百科機能では記事との見た目の差別化を図りつつ、アクションへの導線は共通した形になるよう調整しました。</p>
+        </li>
+        <li>
+          <img src="/img/works/elchika_4.jpg" alt="elchikaイメージ04"/>
+          <p>キャンペーン用のメッセージカードの制作も担当しました。使用する紙の選定、デザインと制作、入稿まで行いました。</p>
+        </li>
       </ImageList>
       <h2>Other Works</h2>
         <CardList>
