@@ -207,9 +207,9 @@ export default () => (
       <H5>Languages</H5>
       <p>JavaScript, HTML5, CSS3(SCSS, PostCSS)</p>
       <H5>Frontend</H5>
-      <p>Vue.js, Nuxt.js, GatsbyJS</p>
+      <p>Vue.js, Nuxt.js, GatsbyJS, React</p>
       <H5>Tools</H5>
-      <p>Adobe Photoshop, Illustrator, Lightroom, Adobe XD, Aftereffect, Dreamweaver</p>
+      <p>Adobe Photoshop, Illustrator, Lightroom, Adobe XD, Aftereffect, Dreamweaver, Figma</p>
     </Skill>
     </Profile>
       <Cursor src="/img/cursor.svg" alt="cursor"/>
@@ -219,6 +219,30 @@ export default () => (
     <ContentTitle>Works</ContentTitle>
       <Works>
         <CardList>
+          <li>
+            <AniLink cover to="/works/medibangpaint" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/medibangpaint.jpg" alt="medibangpaint" /></div>
+            </AniLink>
+            <b>MediBang Paint</b>
+          </li>
+          <li>
+            <AniLink cover to="/works/medibangtrade" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/medibangtrade.jpg" alt="medibangtrade" /></div>
+            </AniLink>
+            <b>MediBang TraDe</b>
+          </li>
+          <li>
+            <AniLink cover to="/works/mpc" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/mpc.jpg" alt="mpc" /></div>
+            </AniLink>
+            <b>MANGA Plus Creators</b>
+          </li>
+          <li>
+            <AniLink cover to="/works/artstreet" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/artstreet.jpg" alt="artstreet" /></div>
+            </AniLink>
+            <b>ART street</b>
+          </li>
           <li>
             <AniLink cover to="/works/kuchikomu" duration={0.75} bg="#4db789" direction="up">
               <div className="image"><img src="/img/works/kuchikomu.jpg" alt="kuchikomu" /></div>
