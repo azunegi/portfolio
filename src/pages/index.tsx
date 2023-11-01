@@ -227,7 +227,7 @@ export default () => (
           </li>
           <li>
             <AniLink cover to="/works/medibangtrade" duration={0.75} bg="#4db789" direction="up">
-              <div className="image"><img src="/img/works/medibangtrade.jpg" alt="medibangtrade" /></div>
+              <div className="image"><img src="/img/works/trade.jpg" alt="medibangtrade" /></div>
             </AniLink>
             <b>MediBang TraDe</b>
           </li>
