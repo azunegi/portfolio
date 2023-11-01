@@ -6,7 +6,6 @@ import Contents from "@/components/Contents";
 import PageTitle from "@/components/PageTitle";
 import Wrapper from "@/components/Works/WorksWrapper";
 import TagList from "@/components/Works/TagList";
-import ImageList from "@/components/Works/ImageList";
 import CardList from "@/components/Works/CardList";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
@@ -66,7 +65,6 @@ export default () => (
         <img src="/img/works/trade.jpg" alt="TraDeトップ画像"/>
         <p>担当者にヒアリングを行い、伝えたい内容とイメージを整理しWF作成からデザイン作成、一部のコーディングを行いました。</p>
       </TopImage>
-      <ImageList>
       <h2>Other Works</h2>
         <CardList>
           <li>
