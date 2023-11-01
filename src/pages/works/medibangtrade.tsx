@@ -60,13 +60,31 @@ export default () => (
         <li>Webサイトデザイン</li>
         <li>レスポンシブデザイン</li>
       </TagList>
-      <ButtonLink><a className="link" href="https://medibangtrade.com/ja//" target="_blank">Webサイトを見る</a></ButtonLink>
+      <ButtonLink><a className="link" href="https://medibangtrade.com/ja/" target="_blank">Webサイトを見る</a></ButtonLink>
       <TopImage>
         <img src="/img/works/trade.jpg" alt="TraDeトップ画像"/>
         <p>担当者にヒアリングを行い、伝えたい内容とイメージを整理しWF作成からデザイン作成、一部のコーディングを行いました。</p>
       </TopImage>
       <h2>Other Works</h2>
         <CardList>
+        <li>
+          <AniLink cover to="/works/medibangpaint" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/medibangpaint.jpg" alt="MediBang Paint" /></div>
+            </AniLink>
+            <b>MediBang Paint</b>
+          </li>
+          <li>
+          <AniLink cover to="/works/mpc" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/mpc.jpg" alt="MANGA Plus Creators" /></div>
+            </AniLink>
+            <b>MANGA Plus Creators</b>
+          </li>
+          <li>
+          <AniLink cover to="/works/artstreet" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/artstreet.jpg" alt="ART street" /></div>
+            </AniLink>
+            <b>ART street</b>
+          </li>
           <li>
           <AniLink cover to="/works/kuchikomu" duration={0.75} bg="#4db789" direction="up">
               <div className="image"><img src="/img/works/kuchikomu.jpg" alt="kuchikomu" /></div>

@@ -86,6 +86,24 @@ export default () => (
       <h2>Other Works</h2>
         <CardList>
           <li>
+          <AniLink cover to="/works/medibangtrade" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/trade.jpg" alt="MediBang TraDe" /></div>
+            </AniLink>
+            <b>MediBang TraDe</b>
+          </li>
+          <li>
+          <AniLink cover to="/works/mpc" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/mpc.jpg" alt="MANGA Plus Creators" /></div>
+            </AniLink>
+            <b>MANGA Plus Creators</b>
+          </li>
+          <li>
+          <AniLink cover to="/works/artstreet" duration={0.75} bg="#4db789" direction="up">
+              <div className="image"><img src="/img/works/artstreet.jpg" alt="ART street" /></div>
+            </AniLink>
+            <b>ART street</b>
+          </li>
+          <li>
           <AniLink cover to="/works/kuchikomu" duration={0.75} bg="#4db789" direction="up">
               <div className="image"><img src="/img/works/kuchikomu.jpg" alt="kuchikomu" /></div>
             </AniLink>
